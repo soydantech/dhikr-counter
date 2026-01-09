@@ -16,9 +16,10 @@ When you use the App, we may automatically collect limited technical information
 |------|-------------|
 | **Device Information** | Device type, operating system, and basic device identifiers |
 | **Usage Information** | App interactions, features used, and session duration |
+| **Advertising Data** | Advertising ID, ad interactions, and basic device information used for ads |
 | **App Preferences** | Language, theme, notification settings, daily targets |
 
-This information is used only to ensure proper app functionality and improve user experience.
+This information is used only to ensure proper app functionality, display advertisements, and improve user experience.
 
 ### Information Stored Locally on Your Device
 
@@ -32,7 +33,7 @@ All personal and religious content is stored **locally on your device** using a 
 - **Widget Configuration**: Home screen widget state and counter data  
 - **Notification Rules**: Reminder schedules and preferences  
 
-🔒 **Important:**  
+🔒 **Important:**
 - This data is **not transmitted** to any server  
 - This data remains **only on your device**  
 - Uninstalling the App removes all stored data  
@@ -62,9 +63,40 @@ We use **OpenStreetMap Nominatim API** for reverse geocoding in the Qibla Compas
 - Returns an approximate address
 - Does not permanently store location data
 
-**Policies:**
-- OpenStreetMap Privacy Policy  
-- Nominatim Usage Policy  
+## Third-Party Services
+
+### Google AdMob
+
+We use **Google AdMob** to display advertisements in the App.
+
+Google AdMob may automatically collect and process certain information, including:
+
+- Advertising ID  
+- Device information (model, OS version)  
+- App interaction data related to ads  
+- Approximate location (country or city level)  
+
+This information is used solely for advertising purposes, such as:
+- Displaying ads  
+- Measuring ad performance  
+- Preventing fraud and abuse  
+
+🔒 **Privacy Notes:**
+- We do **not** receive or store this data ourselves  
+- Data collection is handled directly by Google AdMob  
+- All data transmission is encrypted via HTTPS  
+
+For more information about how Google uses data:
+- https://policies.google.com/privacy  
+- https://support.google.com/admob/answer/6128543  
+
+### Local Notifications
+
+The App uses **Notifee** for local dhikr reminders:
+
+- Notifications are scheduled locally  
+- No internet connection required  
+- No notification data is sent externally  
 
 ## How We Use Information
 
@@ -74,29 +106,19 @@ Information is used strictly to:
 - ✅ Track dhikr progress locally  
 - ✅ Calculate Qibla direction (with permission)  
 - ✅ Display approximate address in Qibla Compass  
+- ✅ Display advertisements through Google AdMob  
 - ✅ Personalize language, theme, and preferences  
 - ✅ Send local dhikr reminder notifications  
 - ✅ Sync widget data with the App  
 
-We do **not** use analytics, tracking, or advertising SDKs.
+## Data Sharing
 
-## Third-Party Services
+We do not sell or share user data with third parties **except** for services required to operate the App, such as advertising services (Google AdMob).
 
-### OpenStreetMap Nominatim API
-
-Used only for Qibla Compass reverse geocoding.
-
-- Data sent: GPS coordinates (only when used)
-- Data received: Approximate address text
-- All requests are encrypted via HTTPS
-
-### Local Notifications
-
-The App uses **Notifee** for local dhikr reminders:
-
-- Notifications are scheduled locally
-- No internet connection required
-- No notification data is sent externally
+Any data shared with third parties is:
+- Limited to what is strictly necessary  
+- Governed by the third party’s privacy policies  
+- Transmitted securely  
 
 ## Data Storage & Security
 
@@ -117,12 +139,14 @@ We do **not** operate backend servers or cloud storage for user data.
 
 - Local-only data storage  
 - No external analytics  
-- No data sharing  
+- Limited third-party data usage (Ads only)  
 - No account or login system  
 
 ## Children’s Privacy
 
-This App is not intended for children under 13 years of age. We do not knowingly collect personal data from children.
+This App is **not primarily intended for children under 13 years of age**.  
+We do not knowingly collect personal data from children.  
+If you believe that a child has provided personal information through advertising services, please contact us.
 
 ## Your Rights & Control
 
@@ -145,16 +169,18 @@ You have full control over your data directly in the App:
 | Notifications | Dhikr reminders | Yes |
 | Local Storage | App functionality | Yes |
 
+Advertising does **not** require additional runtime permissions.
+
 ## In-App Purchases
 
-The App may offer optional **Premium Features**. Payments are processed securely by Google Play or Apple App Store. We do not collect or store payment data.
+The App may offer optional **Premium Features**. Payments are processed securely by Google Play. We do not collect or store payment data.
 
 ## Widgets
 
 Home screen widgets:
-- Work fully offline
-- Sync locally with the App
-- Do not transmit any data externally
+- Work fully offline  
+- Sync locally with the App  
+- Do not transmit any data externally  
 
 ## Changes to This Policy
 
@@ -163,7 +189,7 @@ We may update this Privacy Policy occasionally. Changes will be reflected by upd
 ## Contact Information
 
 | Field | Details |
-|------|--------|
+|------|---------|
 | **Email** | soydantech@gmail.com |
 | **Developer** | SoydanTech |
 | **App Name** | Modern Dhikr Counter |
